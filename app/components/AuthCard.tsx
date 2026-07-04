@@ -16,7 +16,7 @@ export default function AuthCard({ signup }: Props) {
     flow: "auth-code",
 
     onSuccess: async (response) => {
-      const res = await fetch("http://localhost:5000/api/auth/google", {
+      const res = await fetch("https://google-cloud-auth-my2c.vercel.app/api/auth/google", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
